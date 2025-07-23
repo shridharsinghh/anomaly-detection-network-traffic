@@ -1,29 +1,75 @@
-# 🚨 Anomaly Detection in Network Traffic
+# 🚨 Anomaly Detection in Network Traffic using Unsupervised Learning
 
-Using Isolation Forest (unsupervised learning) on the KDD Cup 1999 dataset to detect malicious traffic patterns.
+This project detects anomalies in network traffic using the **KDD Cup 1999 dataset** and **unsupervised learning** (Isolation Forest). It aims to improve network security by identifying unusual patterns in real time.
 
-## 📌 Problem Statement
-Detect network-based attacks like DoS, Probe, R2L using anomaly detection techniques.
+---
 
-## 📂 Files Included
-- `Anomaly_Detection_Network_Traffic.ipynb` – Main notebook
-- `model.joblib` – Trained model
-- `kddcup.data_10_percent_corrected.csv` – Dataset
-- `requirements.txt` – Required libraries
+## 📁 Project Files
 
-## 📊 Dataset
-[KDDCup 1999 - 10% Version](https://www.kaggle.com/datasets/galaxyh/kdd-cup-1999-data)
+| File Name | Description |
+|-----------|-------------|
+| `Anomaly_Detection_KDD.ipynb` | Main Google Colab notebook with full code |
+| `model.joblib` | Trained Isolation Forest model saved (optional but useful) |
+| `kddcup.data_10_percent_corrected.csv` | The dataset (too big for GitHub, link provided below) |
 
-## 🤖 Techniques Used
-- Isolation Forest
-- Train/Test Split
-- Label Encoding
-- Accuracy: 99.96%
+---
 
-## 💻 Libraries Used
-```bash
-pandas
-numpy
-matplotlib
-sklearn
-joblib
+## 📊 Dataset Info
+
+We used the KDD Cup 1999 10% corrected dataset.
+
+🔗 **Download Dataset Manually** (Required in Colab):  
+https://kdd.ics.uci.edu/databases/kddcup99/kddcup.data_10_percent.gz
+
+After download, upload `kddcup.data_10_percent_corrected.csv` to Colab during notebook execution.
+
+---
+
+## ▶️ How to Run (Step-by-Step)
+
+1. Open the notebook in **Google Colab**:
+   [Colab Notebook Link](https://colab.research.google.com/)
+
+2. Upload the CSV dataset manually (if not using `files.upload()` already in notebook).
+
+3. Run all cells step-by-step:
+   - Load dataset
+   - Clean and preprocess
+   - Train model (Isolation Forest)
+   - Predict anomalies
+   - Visualize results
+
+4. The trained model is saved as `model.joblib`.
+
+---
+
+## ✅ Output
+
+- Cleaned dataset (without missing or invalid rows)
+- Fitted unsupervised model
+- Anomaly predictions shown visually and numerically
+- Accuracy and confusion matrix (if labels used)
+
+---
+
+## 📌 Technologies Used
+
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+- Google Colab
+- Isolation Forest (Unsupervised ML)
+
+---
+
+## 🙋 Author
+
+**Shridhar Singh**  
+📧 Email: [singhshridhar916@gmail.com](mailto:singhshridhar916@gmail.com)  
+🔗 GitHub: [shridharsinghh](https://github.com/shridharsinghh)  
+🔗 LinkedIn: [linkedin.com/in/shridhar-singh-](https://www.linkedin.com/in/shridhar-singh-)  
+
+---
+
+
